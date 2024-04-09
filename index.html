@@ -11,55 +11,82 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
 
   <body style="background-color: antiquewhite">
     <header class="header">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a href="#best-product-section" class="header__nav-link">Home</a></li>
-          <li>
-            <a href="#fastest-way-section" class="header__nav-link">Product</a>
-          </li>
-          <li><a href="#pricing-section" class="header__nav-link">Pricing</a></li>
-          <li>
-            <a href="#features-section" class="header__nav-link">About</a>
-          </li>
-          <li><a href="#contact-us-section" class="header__nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header__logo"><img src="img/logo.png" alt="site logo" /></div>
-      <div class="header__social">
-        <ul class="header__social-list">
-          <li>
-            <a href="https://twitter.com/" class="header__social-link"
-              ><img src="img/twitter-logo.png" alt="twitter logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" class="header__social-link"
-              ><img src="img/facebook-logo.png" alt="facebook logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" class="header__social-link"
-              ><img src="img/linkedin-logo.png" alt="linkedin logo"
-            /></a>
-          </li>
-        </ul>
+      <div class="header_container-mobile">
+        <div>
+          <img src="img/logo.png" alt="site logo" class="header__logo" />
+        </div>
+        <div>
+          <img
+            src="img/burger-menu-logo.png"
+            alt="logo"
+            class="header__burger-logo"
+          />
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="best-product__section" id="best-product-section">
+      <div class="header_container-desktop">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="#best-product-section" class="header__nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#fastest-way-section" class="header__nav-link"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a href="#pricing-section" class="header__nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="#features-section" class="header__nav-link">About</a>
+            </li>
+            <li>
+              <a href="#contact-us-section" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <img src="img/logo.png" alt="site logo" class="header__logo" />
+        </div>
+        <div class="header__social">
+          <ul class="header__social-list">
+            <li>
+              <a href="https://twitter.com/" class="header__social-link"
+                ><img src="img/twitter-logo.png" alt="twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" class="header__social-link"
+                ><img src="img/facebook-logo.png" alt="facebook logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="header__social-link"
+                ><img src="img/linkedin-logo.png" alt="linkedin logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="header__best-product-section" id="best-product-section">
         <h1 class="best-product__title">The best products start with Figma</h1>
         <p class="best-product__description">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span class="best-product__description-none">
+            Slate is designed for freelancers
+          </span>
         </p>
-        <button class="best-product__button">Try For Free</button>
+        <a href="#contact-us-section" class="best-product__button button"
+          >Try For Free</a
+        >
       </section>
-
+    </header>
+    <main>
       <section class="features__section" id="features-section">
         <h2 class="features__title">Features</h2>
         <p class="features__description">
@@ -118,7 +145,7 @@
             Most calendars are designed for teams. Slate is designed for
             freelancers
           </p>
-          <button class="fastest-way__button">Try For Free</button>
+          <a href="#" class="fastest-way__button button">Try For Free</a>
         </div>
         <div class="fastest-way__image-container">
           <img class="fastest-way__image" src="img/laptop.png" alt="Laptop" />
@@ -147,7 +174,7 @@
             type="email"
             placeholder="Your Email"
           />
-          <button class="lightning__subscribe-button">Subscribe</button>
+          <a href="#" class="lightning__subscribe-button button">Subscribe</a>
         </div>
       </section>
 
@@ -193,7 +220,9 @@
           <p class="partners__item-title">Client Name</p>
           <img class="partners__item-icon" src="img/amazon-logo.png" alt="" />
         </div>
-        <div><button class="partners__button">Try For Free</button></div>
+        <div>
+          <a href="#" class="partners__button button">Try For Free</a>
+        </div>
       </section>
 
       <section class="testimonials__section">
@@ -211,7 +240,7 @@
           <p class="testimonials__item-description">Ui designer</p>
         </div>
         <div>
-          <button class="testimonials__button">More Testimonials</button>
+          <a href="#" class="testimonials__button button">More Testimonials</a>
         </div>
       </section>
 
@@ -236,7 +265,7 @@
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="pricing__item-button">Order Now</button>
+          <a href="#" class="pricing__item-button button">Order Now</a>
         </div>
         <div class="pricing__item" class="pricing__blue-item">
           <h5 class="pricing__item-title">STANDARD</h5>
@@ -253,7 +282,7 @@
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="pricing__item-button">Order Now</button>
+          <a href="#" class="pricing__item-button button">Order Now</a>
         </div>
         <div class="pricing__item">
           <h5 class="pricing__item-title">BUSINESS</h5>
@@ -270,7 +299,7 @@
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="pricing__item-button">Order Now</button>
+          <a href="#" class="pricing__item-button button">Order Now</a>
         </div>
       </section>
 
@@ -302,7 +331,7 @@
               id="message"
               name="message"
               rows="4"
-              cols="50"
+              cols="20"
               placeholder="Your Message"
             >
             </textarea>
@@ -349,8 +378,6 @@
           <iframe
             class="contact-us__video"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53779.37081130188!2d-83.75633278658796!3d32.60056857981157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3e74055942d77%3A0xbc8975562c97ae02!2sWalmart%20Neighborhood%20Market!5e0!3m2!1suk!2sua!4v1712084106927!5m2!1suk!2sua"
-            width="600"
-            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -396,9 +423,13 @@
         <nav class="footer__nav">
           <h3 class="footer__nav-title">Pages</h3>
           <ul class="footer__nav-list">
-            <li><a href="#best-product-section" class="footer__nav-link">Home</a></li>
             <li>
-              <a href="#fastest-way-section" class="footer__nav-link">Product</a>
+              <a href="#best-product-section" class="footer__nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#fastest-way-section" class="footer__nav-link"
+                >Product</a
+              >
             </li>
             <li>
               <a href="#pricing-section" class="footer__nav-link">Pricing</a>
